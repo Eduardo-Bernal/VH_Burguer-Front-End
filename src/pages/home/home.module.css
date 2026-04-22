@@ -1,0 +1,186 @@
+/*SECTION BANNER*/
+
+#banner{
+    height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#banner .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    height: 100%;
+}
+
+#banner .container h1{
+    color: var(--laranja-destaque);
+    font-size: var(--tamanho-h1);
+    font-weight: 500;
+}
+
+#banner.container img{
+    width: 1100px;
+}
+
+#banner .buttons_banner{
+    width: 70%;
+
+    display: flex;
+    gap: 50px;
+}
+
+/*SECTION DESTAQUES*/
+
+#destaques{
+    height: 90vh;
+
+    background-color: var(--fundo-escuro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#destaques .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    height: 90%;
+
+    align-items: center;
+}
+
+#destaques .destaques_esquerda{
+    height: 80%;
+}
+
+#destaques .card_destaques {
+    background-image: url("/imgs/mais_pedidos.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column-reverse;
+
+    padding: 10px;
+}
+
+#destaques .card_superior{
+    background-image: url("/imgs/muito_bacon.png");
+
+    align-items: end;
+}
+
+#destaques .card_inferior{
+    background-image: url("/imgs/super_combos.png");
+
+    align-items: end;
+}
+
+#destaques h2{
+    color: var(--fundo-claro);
+    font-size: var(--tamanho-titulo);
+    font-weight: 400;
+}
+
+#destaques p{
+    color: var(--fundo-claro);
+    font-size: var(--tamanho-subtitulo);
+}
+
+#destaques .destaques_direita{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 80%;
+    grid-row-gap: 20px;
+}
+
+/*SECTION CARDÁPIO*/
+#cardapio {
+    height: 150vh;
+    background-color: var(--fundo-claro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cardapio .container{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+}
+
+#cardapio h2 {
+    color: var(--laranja-destaque);
+    font-size: 80px;
+    font-weight: 500;
+
+    text-align: center;
+}
+
+#cardapio .filtrar{
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    height: 50px;
+    background-color: var(--laranja-destaque);
+
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px;
+}
+
+#cardapio .filtrar label{
+    font-size: 20px;
+}
+
+#cardapio .filtrar select{ 
+    border: none;
+    background-color: var(--laranja-destaque);
+}
+
+/*SECTION UNIDADES*/
+
+#unidades {
+    height: 50vh;
+
+    background-image: url("/imgs/unidade.jpeg");
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: multiply;
+}
+
+#unidades .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 30vh;
+}
+
+#unidades .container h2{
+    color: var(--fundo-claro);
+
+    font-size: var(--tamanho-titulo);
+}
+
+#unidades .container li{
+    color: var(--fundo-claro);
+
+    font-size: var(--tamanho-subtitulo);
+}
