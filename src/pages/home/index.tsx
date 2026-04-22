@@ -15,8 +15,8 @@ const Home = () => {
                         <h1>BEM-VINDO AO VH BURGUER</h1>
                         <img src="/imgs/foto_de_hamburgueres.png" alt=""/>
                         <div className={styles.buttons_banner}>
-                            <Button type={"button"}>Chamar atendente</Button>
-                            <Button type={"button"}>Ver cardápio</Button>
+                            <Button type={"button"} variant={"botao-principal"}>Chamar atendente</Button>
+                            <Button type={"button"} variant={"botao-secundario"} >Ver cardápio</Button>
                         </div>
                     </div>
                 </section>
@@ -44,14 +44,6 @@ const Home = () => {
                 <section id={styles.cardapio}>
                     <div className={`layout_guide ${styles.container}`}>
                         <h2>CARDÁPIO</h2>
-                        <div className={styles.filtrar}>
-                            <label htmlFor="Filtrar">Filtrar</label>
-                            <select name="Filtrar" id="">
-                                <option value=""></option>
-                                <option value=""></option>
-                                <option value=""></option>
-                            </select>
-                        </div>
                         <ListaProduto></ListaProduto>
                     </div>
                 </section>
